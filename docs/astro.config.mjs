@@ -4,10 +4,12 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://spectralwiz.github.io",
+	base: "/prisma/",
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Prisma',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/spectralwiz/prisma' }],
 			sidebar: [
 				{
 					label: 'Guides',
@@ -15,10 +17,6 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
 				},
 			],
 		}),
