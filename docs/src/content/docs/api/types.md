@@ -5,11 +5,11 @@ description: Types API Documentation
 
 ## EmitterConfig
 
-```luau
+```lua
 type EmitterConfig = {
 	Adornee: BasePart | Attachment?,
 	EmitterCFrame: CFrame?,
-	EmitterSize: [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3)?,
+	EmitterSize: Vector3?,
 	EmissionDirection: Enum.NormalId?,
 
 	Shape: Enum.ParticleEmitterShape | (
