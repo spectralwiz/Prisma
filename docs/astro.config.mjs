@@ -12,9 +12,18 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/spectralwiz/prisma' }],
 			sidebar: [
 				{
+					label: 'API',
+					items: [
+						{ label: 'Types', slug: 'api/types' },
+						{ label: 'Prisma', slug: 'api/prisma' },
+						{ label: 'Emitter', slug: 'api/emitter' },
+						{ label: 'Particle', slug: 'api/particle' },
+						{ label: 'Force', slug: 'api/force' },
+					],
+				},
+				{
 					label: 'Guides',
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
 				},
