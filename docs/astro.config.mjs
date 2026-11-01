@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: "https://spectralwiz.github.io",
-	base: "/prisma",
+	base: "/Prisma",
 	integrations: [
 		starlight({
 			title: 'Prisma',
