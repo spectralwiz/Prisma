@@ -7,13 +7,17 @@ description: Types API Documentation
 
 ```luau
 type EmitterConfig = {
-    -- Emitter configuration
-
 	Adornee: BasePart | Attachment?,
 	EmitterCFrame: CFrame?,
-	EmitterSize: Vector3?,
+	EmitterSize: [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3)?,
 	EmissionDirection: Enum.NormalId?,
-	Shape: Enum.ParticleEmitterShape | (size: Vector3, style: Enum.ParticleEmitterShapeStyle, partial: number) -> CFrame,
+
+	Shape: Enum.ParticleEmitterShape | (
+        size: Vector3,
+        style: Enum.ParticleEmitterShapeStyle,
+        partial: number
+    ) -> CFrame,
+
 	ShapeStyle: Enum.ParticleEmitterShapeStyle?,
 	ShapeInOut: Enum.ParticleEmitterShapeInOut?,
 	ShapePartial: number?,
@@ -26,8 +30,6 @@ type EmitterConfig = {
 	EmissionCullingEnabled: boolean?,
 	AdaptiveEmissionEnabled: boolean?,
 	MaxEmissionDistance: number?,
-
-    -- Particle configuration
 
     Color: Color3 | ColorSequence?,
 	Size: Vector3 | number | NumberSequence | {number | NumberSequence}?,
