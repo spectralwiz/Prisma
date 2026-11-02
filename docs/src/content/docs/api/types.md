@@ -5,7 +5,7 @@ description: Types API Documentation
 
 ## EmitterConfig
 
-```lua
+```luau
 type EmitterConfig = {
 	Adornee: BasePart | Attachment?,
 	EmitterCFrame: CFrame?,
@@ -66,7 +66,7 @@ type EmitterConfig = {
 	Friction: number?,
 	
 	OnUpdate: ((
-		self: Particle,
+		particle: Particle,
 		deltaTime: number,
 		cframe: CFrame,
 		velocity: Vector3,
@@ -75,7 +75,7 @@ type EmitterConfig = {
 	)?,
 	
 	OnVisualUpdate: ((
-		self: Particle,
+		particle: Particle,
 		deltaTime: number,
 		color: Color3?,
 		reflectance: number?,
@@ -97,7 +97,7 @@ Configuration parameters for new [Emitters](./emitter). Either `Adornee` or `Emi
 
 ```luau
 type ForceConfig = {
-	Type: "Direct" | "Orbital"?,
+	Type: "Linear" | "Angular"?,
 	Origin: BasePart | Vector3?,
 	Strength: number?,
 	Radius: number?,

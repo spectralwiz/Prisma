@@ -28,6 +28,9 @@ export default defineConfig({
 					],
 				},
 			],
+			customCss: [
+				'./src/styles/custom.css',
+			],
 		}),
 	],
 });
