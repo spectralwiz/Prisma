@@ -3,8 +3,8 @@ title: Types
 description: Types API Documentation
 ---
 
-## EmitterConfig
 ---
+## EmitterConfig
 
 ```luau
 type EmitterConfig = {
@@ -94,6 +94,7 @@ type EmitterConfig = {
 
 Configuration parameters for new [Emitters](./emitter). Either `Adornee` or `EmitterCFrame` must be defined; All other properties are optional. Undefined properties will use default values (or read from the given `Template` instance where appropriate).
 
+---
 ## ForceConfig
 
 ```luau
