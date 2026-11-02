@@ -4,6 +4,7 @@ description: Types API Documentation
 ---
 
 ## EmitterConfig
+---
 
 ```luau
 type EmitterConfig = {
